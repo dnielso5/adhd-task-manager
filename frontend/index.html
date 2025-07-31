@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ADHD Task App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>ADHD Task Manager</h1>
+    <div id="task-form">
+      <input type="text" id="task-title" placeholder="New task">
+      <select id="task-mode">
+        <option value="low_motivation">Low Motivation</option>
+        <option value="overwhelmed">Overwhelmed</option>
+        <option value="hyperfocus">Hyperfocus</option>
+      </select>
+      <button onclick="addTask()">Add Task</button>
+    </div>
+    <ul id="task-list"></ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
