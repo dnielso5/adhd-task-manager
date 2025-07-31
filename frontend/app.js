@@ -1,4 +1,4 @@
-const api = "http://localhost:8009"
+const api = `${window.location.protocol}//${window.location.hostname}:8009`
 
 function addTask() {
   const title = document.getElementById("task-title").value
