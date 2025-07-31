@@ -8,11 +8,13 @@ services:
       - task_data:/app/data
 
   frontend:
-    build: ./frontend
+    build:
+      context: ./frontend-react
     ports:
       - "3009:80"
     depends_on:
       - backend
+
 
 volumes:
   task_data:
